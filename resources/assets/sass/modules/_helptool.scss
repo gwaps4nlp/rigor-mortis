@@ -1,0 +1,49 @@
+#helpRelation img.scientist {
+	display:none;
+}
+.help-upl ol li {
+	line-height: 1.25;
+	list-style-type: decimal;
+}
+.aideTool  > .help {
+  position: relative;
+  outline: none;
+}
+
+.aideTool > .help > .aideTip {
+  display:none;
+  position: absolute;
+  bottom: 0px;
+  left: -800px;
+  z-index: 999;
+  width: 800px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  background-color: #9bc5aa;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #75211f;
+}
+
+.aideTool:hover > .help > .aideTip {
+  display:block;
+  visibility: visible;
+}
+
+.savant {
+  margin-top: 20px;
+  margin-right: 10%;
+  width: 100px;
+  height: 100px;
+  background: url("#{$image-path}/savant.jpg");
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: solid 4px #36140f;
+}
+
+.help {
+  margin-top: 20px;
+  margin-right: 10%;
+}

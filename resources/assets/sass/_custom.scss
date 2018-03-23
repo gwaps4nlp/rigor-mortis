@@ -1,0 +1,58 @@
+
+// Fonts
+
+$font-family-sans-serif: 'Cicle-Fina', sans-serif;
+$font-family-base:            $font-family-sans-serif !default;
+
+// Brands
+$theme-colors: (
+  "primary": #337ab7
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 676px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 767px,
+  md: 991px,
+  lg: 1199px,
+  xl: 1300px
+);
+
+$nav-tabs-link-active-color: #fff;
+
+$dropdown-link-color: #FCF8E3;
+
+$dropdown-bg: #545454;
+
+$card-columns-count: 3;
+
+$card-bg : #D4AC71;
+$card-border-width: 2px;
+$card-border-color: rgba(0, 0, 0, 0.125);
+$card-border-radius: 14px;
+
+$bg-sentence : #9bc5aa;
+
+$bg-color: #9bc5aa;
+// $bg-color: rgba(235, 188, 120, 0.5);
+
+$bg-image:	"pyramides.png";
+
+$rounded-btn-color:	#ebbc78;
+$rounded-btn-bg-color:	white;
+$rounded-btn-color-hover:	white;
+$rounded-btn-bg-color-hover:	#ebbc78;
+
+$image-path      : "/img";
+$font-path: "/fonts";
+
+$image-path      : "/img";
+$font-path: "/fonts";
+
+@import "node_modules/bootstrap/scss/bootstrap";

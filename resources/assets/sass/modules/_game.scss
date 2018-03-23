@@ -1,0 +1,214 @@
+/***** UPL Game *****/
+#body-upl {
+    background-image: url('#{$image-path}/#{$bg-image}');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left 70px;
+    min-height: calc(100vh - 70px);    
+}
+.container-upl{
+  // background-color: $bg-color;
+}
+.card-body {
+    color: rgba(250,250,250,1) !important;
+    text-shadow: -1px -1px #3F3F3F !important;
+}
+
+.upl-word {
+  color : #4a1710;
+}
+.results-upl {
+  font-size: 18px;
+  color : #4a1710;
+}
+#sentence {
+  background: $bg-sentence;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: block;
+  min-width: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#block-game #progress {
+  z-index: 1;
+  color: #4A1710;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 92px;
+}
+#block-game #phase {
+  position: relative;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#block-game #progress-container {
+  width: 60%;
+  margin: 0 20%;
+  height: 100px;
+  display: block;
+  background-color: #FFFFFC;
+  overflow: hidden;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+#block-game #phaseBar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #75211f;
+}
+#block-game #progressBar {
+  margin: 0 20%;
+  position: absolute;
+  left: 0;
+  width: 60%;
+}
+
+.incorrect_upl, .almost_correct_upl, .correct_upl {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 5px;
+}
+.incorrect_upl {
+  border-color: red;
+}
+.almost_correct_upl {
+  border-color: orange;
+}
+.correct_upl {
+  border-color: lightgreen;
+}
+
+.badge-game {
+  background-color: green;
+}
+.sentence-upl {
+  font-size: 1.5rem!important;
+}
+#sentence.sentence-upl > span.selected {
+  color: #0e7f3c!important;
+}
+#container-upl {
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+#new-upl {
+  padding: 0.5rem;
+  position: relative;
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  border: 1px dashed #fefefe;
+  min-width: 20%;
+  display: inline-block;
+}
+#validated-upl {
+  padding: 0 1rem;
+
+  position: relative;
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+span.validated-upl {
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  border: 1px dashed transparent;
+  border-radius: 5px;
+  display: inline-block;
+  position:relative;
+}
+div.container-validated-upl {
+  display: block;
+  margin-right: 1rem;
+}
+
+span.validated-upl > i {
+  position: absolute;
+  right:0;
+  top:0;  
+  visibility: hidden;
+}
+div.container-validated-upl > span.validated-upl:hover > i {
+  visibility: visible;
+}
+span.validated-upl:hover {
+  border: 1px dotted red;
+  color: #4a1710; 
+  visibility: visible;
+}
+
+#sentence .upl-word:hover {
+    color: #00b40c !important;
+}
+div.word-upl {
+  padding:0.5rem 0.5rem;
+  margin-right:0.5rem;
+  border: 1px dotted black;
+  border-radius: 5px;
+  background-color: #9bc5aa;
+  color: #4a1710;
+  display: inline-block;
+  position: relative;
+}
+#new-upl div.word-upl:hover {
+  border: 1px dotted red;
+  background-color: #9bc5aa;
+  color: #4a1710;
+}
+div.word-upl > i {
+  visibility:hidden;
+  position: absolute;
+  right:0;
+  top:0;
+}
+#new-upl div.word-upl:hover > i {
+  visibility:visible;
+}
+
+div.modal.upl-instructions ol li {
+  list-style-type: decimal;
+}
+
+div.modal.upl-instructions ul li {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+#container-game {
+  background-color: #363636;
+  color: #F5C47D !important;
+  min-height: 80vh;
+  min-width: 100%;
+  border: 2px solid black;
+  border-top: none;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding-bottom: 70px;  
+}

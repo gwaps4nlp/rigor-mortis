@@ -62,3 +62,5 @@ Route::group(array('before' => 'admin'), function ()
 	Route::get('admin/reporting', 'AdminController@getReporting');
 	Route::get('admin/mwe', 'AdminController@getMwe');
 });
+
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');

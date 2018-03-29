@@ -10,7 +10,7 @@
 <div class="card-body text-center">
     <h1 class="text-muted">Bienvenue sur Rigor Mortis !</h1>
     <p class="card-text">Viens tester ton intuition sur les expressions multi-mots.</p>
-    <p class="card-text"><button class="btn btn-success btn-lg">Jouer</button></p>
+    <p class="card-text"><a class="btn btn-success btn-lg" href="{{ route('upl-game') }}">Jouer</a></p>
      </div>
 </div>
 

@@ -1,7 +1,7 @@
 <div id="navbar-top" class="bg-light fixed-top pt-0 pb-0">
 	<nav class="container navbar navbar-expand-sm navbar-light">
 		<a class="navbar-brand"  href="{!! url('') !!}">
-	{{--	{!! Html::image('img/logo.png','logo',array('id'=>'zombi-logo','style'=>'height:36px;')) !!} --}}
+		{!! Html::image('img/logo.png','logo',array('id'=>'rigormortis-logo','style'=>'height:34px;')) !!} 
 		</a>
 		<div id="">
 			<ul class="navbar-nav">
@@ -33,7 +33,7 @@
 				<span class="username">{{ Auth::user()->username }}</span>
 				<i class="fa fa-chevron-down pl-1 pr-2"></i>
 			</div>
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="top:95%">
 				<li><a href="{!! url('user/home') !!}">Mon laboratoire</a></li>
 				@if(Auth::user()->isAdmin())
 					<li class="d-xl-none"><a href="{!! url('admin') !!}">Administration</a></li>

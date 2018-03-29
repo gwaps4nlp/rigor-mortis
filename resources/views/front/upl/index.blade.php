@@ -177,7 +177,7 @@
     background-color: rgb(235, 188, 120);
     height: 90vh;
 }*/
-@if($theme=="pyramids-dark")
+@if($theme=="pyramids-dark"||$theme=="default")
 .text-muted {
 	color: rgba(199,161,116,1) !important;
 	color: #F5C47D !important;
@@ -233,7 +233,7 @@ div.word-upl {
     color: #bdc6fc !important;
 }
 
-@elseif($theme=="pyramids-sable"||$theme=="default")
+@elseif($theme=="pyramids-sable")
 .card {
 	position: relative;
 	width: 100%;

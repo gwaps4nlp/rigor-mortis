@@ -25,7 +25,7 @@
             <div id="progress-container" class="progress">
                 <div class="progress-bar-game" id="phaseBar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">  
                 </div>
-                @if(isset($game->theme)&&$game->theme=="pyramids-dark")
+                @if(isset($game->theme)&&($game->theme=="pyramids-dark"|| $game->theme=="default"))
                     {!! Html::image('img/sceptre_darkgrey.png','progression',array('id'=>'progressBar','style'=>'margin:0 20%;position:absolute;left:0;width:60%;')) !!}
                 @else
                     {!! Html::image('img/bone.png','progression',array('id'=>'progressBar','style'=>'margin:0 20%;position:absolute;left:0;width:60%;')) !!}

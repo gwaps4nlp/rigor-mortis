@@ -1,4 +1,4 @@
-@extends('front.template')
+@extends('front.template-upl')
 
 
 @section('main')
@@ -17,8 +17,8 @@
 
 
 	<div class="pb-5">
-	<div class="row">
-	    <div class="col-md-6 pt-4 py-md-5 pl-5 pr-5">
+	<div class="row p-5">
+	    <div class="col-md-5 pt-4 py-md-5 pl-5 pr-5 card">
 			
 			{!! Form::open(['url' => 'login', 'method' => 'post', 'role' => 'form']) !!}
 			<h2 class="text-center">{{ trans('site.connection') }}</h2>
@@ -41,8 +41,10 @@
 				{!! Form::close() !!}
 
 	    </div>
+	    <div class="col-md-1">
 
-	    <div class="col-md-6 pt-4 py-md-5 pl-5 pl-md-3 pr-5">
+	    </div>
+	    <div class="col-md-6 pt-4 py-md-5 pl-5 pl-md-3 pr-5 card">
 		{!! Form::open(['url' => 'register', 'method' => 'post', 'role' => 'form']) !!} 
 		<h2 class="text-center">{{ trans('site.register') }}</h2>
 
@@ -64,11 +66,25 @@
 	    </div>
 	</div>
 	<hr/>
-	<div class="row">
-	    <div class="col-12 px-5" id="charte">
-		@include('lang/'.App::getLocale().'/charte')
-	    </div>
+	<div class="container">
+		<div class="row">
+		    <div class="col-12 p-5 card" id="charte">
+			@include('lang/'.App::getLocale().'/charte')
+		    </div>
+		</div>
 	</div>
 	</div>
 
 @stop
+
+@section('css')
+<style type="text/css">
+.card {
+	background-color : #505050;
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	border-radius: 14px;
+	color: #F5C47D !important;
+}
+
+</style>
+@endsection

@@ -1,17 +1,17 @@
-<h2>Charte d'Admission au jeu ZombiLingo</h2>
+<h2>Charte d'Admission au jeu Rigor Mortis</h2>
 
 <p>
-ZombiLingo est un jeu gratuit créé dans le cadre d'un projet de recherche
+Rigor Mortis est un jeu gratuit créé dans le cadre d'un projet de recherche
 par <a href="http://www.schplaf.org/kf/" target="_blank">Karën Fort</a>
 et <a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a>
 au sein du <a href="http://www.loria.fr" target="_blank">LORIA</a>,
 avec l'aide d'Hadrien Chastant et de Valentin Stern (alors étudiants à l'Université de Lorraine).
 L'objet de ce projet est la construction de ressources lexicales et de corpus annotés pour des applications de traitement automatique de la langue (TAL).
-Ces données sont le produit de l'activité des joueurs de ZombiLingo.
+Ces données sont le produit de l'activité des joueurs de Rigor Mortis.
 </p>
 <p>
 Les données sont {!! link_to('informations','accessibles',['target'=>'_blank']) !!} sous des licences libres variées (fonction de la licence de la ressource d'origine), qui sont précisées dans chaque ressource.
-Le code source de ZombiLingo reste, lui, pour l'instant privateur et appartient en totalité à ses auteurs.
+Le code source de Rigor Mortis reste, lui, pour l'instant privateur et appartient en totalité à ses auteurs.
 Tout accès, utilisation, détournement, publication ou divulgation d'informations de tout ou partie de ce code sans le consentement écrit des auteurs sera passible de poursuites.
 </p>
 <p>
@@ -27,7 +27,7 @@ De manière générale, il est attendu de la part des joueurs un comportement fa
 <p>
 La participation au jeu est entièrement gratuite et l'inscription est ouverte à tous les internautes disposant d'un accès à Internet régulier et éventuellement d'une adresse mail personnelle et active (ce dernier point n'étant pas obligatoire).
 Des mails pourront être envoyés au joueur en fonctions des évolutions du jeu.
-Les corpus proposés dans ZombiLingo peuvent contenir des textes ne convenant pas à des personnes de moins de 16 ans.
+Les corpus proposés dans Rigor Mortis peuvent contenir des textes ne convenant pas à des personnes de moins de 16 ans.
 </p>
 <h2>
 (2) Données Personnelles
@@ -62,8 +62,8 @@ F-54506 Vandœuvre-lès-Nancy Cedex
 </h2>
 
 <p>
-Certains termes, textes ou certaines questions proposés dans ZombiLingo peuvent être considérés comme profanes, vulgaires ou offensants par certains joueurs.
-L'objet de ZombiLingo étant de constituer des ressources langagières couvrant l'ensemble des faits ou opinions possibles, de telles informations ne seront a priori pas retirées du jeu.
+Certains termes, textes ou certaines questions proposés dans Rigor Mortis peuvent être considérés comme profanes, vulgaires ou offensants par certains joueurs.
+L'objet de Rigor Mortis étant de constituer des ressources langagières couvrant l'ensemble des faits ou opinions possibles, de telles informations ne seront a priori pas retirées du jeu.
 Toutefois, les joueurs sont encouragés à signaler tout contenu inapproprié.
 </p>
 <h2>
@@ -82,7 +82,7 @@ Un compte doit être contrôlé par un joueur&nbsp;: il est formellement interdi
 (6) Bogues
 </h2>
 <p>
-ZombiLingo n'est pas à l'abri de bogues et incohérences.
+Rigor Mortis n'est pas à l'abri de bogues et incohérences.
 Chaque joueur est tenu de rapporter (par mail ou sur le forum) au plus vite tout problème décelé, et toute utilisation abusive ou volontaire d'un bogue ou d'une faille se verra sanctionnée et pourra se solder par la suppression du compte du joueur concerné.
 Des compensations pourront intervenir de la part des administrateurs, mais ils en seront seuls juges.
 </p>
@@ -92,7 +92,7 @@ Des compensations pourront intervenir de la part des administrateurs, mais ils e
 <p>
 Pour le bon fonctionnement du jeu, nous souhaitons implanter un cookie dans votre ordinateur.
 Un cookie ne nous permet pas de vous identifier ; en revanche, il enregistre des informations relatives à la navigation de votre ordinateur sur notre site (les pages que vous avez consultées, la date et l'heure de la consultation, etc.) que nous pourrons lire lors de vos visites ultérieures. La durée de conservation de ces informations dans votre ordinateur est de plusieurs mois.
-Vous pouvez vous opposer à l'enregistrement de cookies, toutefois ZombiLingo ne pourra alors pas fonctionner normalement.
+Vous pouvez vous opposer à l'enregistrement de cookies, toutefois Rigor Mortis ne pourra alors pas fonctionner normalement.
 Nous vous informons que vous pouvez vous opposer à l'enregistrement de cookies en configurant votre navigateur de la manière suivante :
 
 Pour Microsoft Internet Explorer 6.0 : 1. choisissez le menu "Outils" (ou "Tools"), puis "Options Internet" (ou "Internet Options"). 2. cliquez sur l'onglet "Confidentialité" (ou "Confidentiality") 3. sélectionnez le niveau souhaité à l'aide du curseur.
@@ -111,7 +111,7 @@ Si vous observez des modifications notables dans votre vie quotidienne: syndrome
 (9) Charte d'admission
 </h2>
 <p>
-La présente charte doit être lue et acceptée dans son intégralité pour pouvoir jouer à ZombiLingo.
+La présente charte doit être lue et acceptée dans son intégralité pour pouvoir jouer à Rigor Mortis.
 Elle est susceptible d'être modifiée par les gestionnaires du jeu.
 Le cas échéant, il sera demandé aux joueurs d'accepter explicitement les modifications apportées pour pouvoir continuer à jouer.
 

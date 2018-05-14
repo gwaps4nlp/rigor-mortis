@@ -17,7 +17,7 @@ use App\Models\Dela;
 use App\Exceptions\UplGameException;
 use Gwaps4nlp\Core\Models\ConstantGame;
 use Gwaps4nlp\Core\Models\Source;
-use Gwaps4nlp\Game;
+use Gwaps4nlp\Core\Game;
 use App\Repositories\UplStageRepository;
 use App\Repositories\SentenceUplStageRepository;
 use Response, View, DB;

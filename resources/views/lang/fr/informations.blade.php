@@ -18,7 +18,7 @@ Avant de jouer, lisez la {!! link_to('charter','charte') !!} de Rigor Mortis.
 	<li><a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a> -- (Équipe Sémagramme, LORIA)&nbsp;: conception et animation du jeu</li>
 	<li><a href="https://apps.atilf.fr/homepages/mconstant/" target="_blank">Matthieu Constant</a> -- (ATILF, Université de Lorraine)&nbsp;: conception et animation du jeu</li>
 	<li>Nicolas Lefebvre&nbsp;: développement initial</li>
-	<li>Yann-Alan Pilatte -- (Sorbonne Université)&&nbsp;: spécifications et tests</li>
+	<li>Yann-Alan Pilatte -- (Sorbonne Université)&nbsp;: spécifications et tests</li>
 	<li>Charles Ancé&nbsp;: dessins</li>
 </ul>
 

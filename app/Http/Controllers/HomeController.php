@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\ChangeLocale;
-use Gwaps4nlp\Repositories\UserRepository;
+use Gwaps4nlp\Core\Repositories\UserRepository;
 use Illuminate\Support\Facades\Request;
 use App\Models\LogDB;
 use Session;

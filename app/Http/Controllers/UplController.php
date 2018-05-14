@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\UplStage;
 use App\Models\SentenceUpl;
 use App\Models\Upl;
-use Gwaps4nlp\Models\Source;
+use Gwaps4nlp\Core\Models\Source;
 use App\Models\SentenceUplStage;
 use App\Models\SentenceUplUser;
 use App\Models\Sentence;

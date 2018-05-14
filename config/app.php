@@ -171,9 +171,9 @@ return [
         Barryvdh\TranslationManager\ManagerServiceProvider::class,
         Gwaps4nlp\FaqManager\FaqServiceProvider::class,
         Gwaps4nlp\NewsManager\NewsServiceProvider::class,
-        Gwaps4nlp\GameServiceProvider::class,
-        Gwaps4nlp\CoreServiceProvider::class,
-        
+        // Gwaps4nlp\GameServiceProvider::class,
+        // Gwaps4nlp\CoreServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

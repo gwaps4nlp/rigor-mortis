@@ -2,9 +2,9 @@
 
 namespace App\Repositories;
 
-use Gwaps4nlp\Models\Corpus;
-use Gwaps4nlp\Models\Source;
-use Gwaps4nlp\Repositories\BaseRepository;
+use Gwaps4nlp\Core\Models\Corpus;
+use Gwaps4nlp\Core\Models\Source;
+use Gwaps4nlp\Core\Repositories\BaseRepository;
 use DB;
 use Config;
 

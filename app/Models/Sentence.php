@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Gwaps4nlp\Models\Sentence as Gwaps4nlpSentence;
+use Gwaps4nlp\Core\Models\Sentence as Gwaps4nlpSentence;
 use DB;
 
 class Sentence extends Gwaps4nlpSentence

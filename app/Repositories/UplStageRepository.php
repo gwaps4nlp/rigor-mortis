@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\Models\UplStage;
 use App\Models\SentenceUplUser;
-use Gwaps4nlp\Repositories\BaseRepository;
+use Gwaps4nlp\Core\Repositories\BaseRepository;
 use DB;
 
 class UplStageRepository extends BaseRepository 

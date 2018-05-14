@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Gwaps4nlp\Models\Language;
-use Gwaps4nlp\Repositories\UserRepository;
+use Gwaps4nlp\Core\Models\Language;
+use Gwaps4nlp\Core\Repositories\UserRepository;
 use App\Repositories\EmailFrequencyRepository;
-use Gwaps4nlp\Repositories\RoleRepository;
+use Gwaps4nlp\Core\Repositories\RoleRepository;
 use App\Http\Requests\ChangeEmailRequest;
 use App\Http\Requests\Auth\ChangePasswordRequest;
 use App\Models\User;
 use Gwaps4nlp\NewsManager\Models\News;
-use Gwaps4nlp\Models\Role;
+use Gwaps4nlp\Core\Models\Role;
 use Response, Auth;
 
 class UserController extends Controller

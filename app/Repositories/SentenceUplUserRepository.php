@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\SentenceUplUser;
-use Gwaps4nlp\Repositories\BaseRepository;
+use Gwaps4nlp\Core\Repositories\BaseRepository;
 use DB;
 
 class SentenceUplUserRepository extends BaseRepository 

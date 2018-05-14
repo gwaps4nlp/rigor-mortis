@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Gwaps4nlp\Repositories\UserRepository;
+use Gwaps4nlp\Core\Repositories\UserRepository;
 use Illuminate\Http\RedirectResponse;
 
 class AdminController extends Controller
@@ -19,7 +19,7 @@ class AdminController extends Controller
     {
         $this->middleware('admin');
     }
-    
+
     /**
      * Show the admin panel.
      *
@@ -40,7 +40,7 @@ class AdminController extends Controller
         session()->put('mwe.enabled',1);
         return new RedirectResponse(url('/game/mwe/begin/0'));
     }
-    
+
     /**
      * Show the reporting page.
      *
@@ -57,14 +57,14 @@ class AdminController extends Controller
             $registrations = $users_repo->countRegistrationsByWeek();
             $label_period = "semaine";
         } else {
-            $annotations = $annotations_user->countByMonth($request->input('relation_id'));    
+            $annotations = $annotations_user->countByMonth($request->input('relation_id'));
             $registrations = $users_repo->countRegistrationsByMonth();
             $label_period = "mois";
         }
         $relations = $relations_repo->getListPlayable();
         $users = $users_repo->getList();
         $annotationsByUser = $annotations_user->countByUser($request->input('relation_id'));
-        
+
         // $registrationsByWeek = $users_repo->countRegistrationsByWeek();
         // $registrationsByMonth = $users_repo->countRegistrationsByMonth();
 

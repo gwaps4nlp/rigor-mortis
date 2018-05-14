@@ -10,7 +10,7 @@
 		<input type="submit" value="Filtrer" class="btn btn-success" />
 	</div>
 </div>
-	{!! Form::close() !!}	
+	{!! Form::close() !!}
 
 </form>
 	<table class="table table-striped" id="classement">
@@ -19,7 +19,6 @@
 			<th>Pseudo</th>
 			<th>Rôles</th>
 			<th>Points</th>
-			<th>Niveau</th>
 			<th>Mail</th>
 			<th>Date</th>
 		</tr>
@@ -30,7 +29,6 @@
 			<td>{{ $user->username }}</td>
 			<td>{{ $user->roles->implode('label', ', ') }}</td>
 			<td>{{ $user->score }}</td>
-			<td>{{ $user->level->id }}</td>
 			<td>{{ $user->email }}</td>
 			<td>{{ $user->created_at }}</td>
 		</tr>

@@ -2,10 +2,10 @@
 
 <p>
 Rigor Mortis est un jeu gratuit créé dans le cadre d'un projet de recherche
-par <a href="http://www.schplaf.org/kf/" target="_blank">Karën Fort</a>
-et <a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a>
-au sein du <a href="http://www.loria.fr" target="_blank">LORIA</a>,
-avec l'aide d'Hadrien Chastant et de Valentin Stern (alors étudiants à l'Université de Lorraine).
+par <a href="http://www.schplaf.org/kf/" target="_blank">Karën Fort</a>, <a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a>
+au sein du <a href="http://www.loria.fr" target="_blank">LORIA</a>, <a href="https://apps.atilf.fr/homepages/mconstant/" target="_blank">Matthieu Constant</a>
+au sein du <a href="http://www.atilf.fr" target="_blank">ATILF</a>,
+avec l'aide de Yann-Alan Pilatte (étudiant à Sorbonne Université).
 L'objet de ce projet est la construction de ressources lexicales et de corpus annotés pour des applications de traitement automatique de la langue (TAL).
 Ces données sont le produit de l'activité des joueurs de Rigor Mortis.
 </p>

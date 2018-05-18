@@ -2,7 +2,7 @@
 
 <p>
 Rigor Mortis is a free game created as part of a research project by <a href="http://www.schplaf.org/kf/index_en.php" target="_blank">Karën Fort</a> (associate prof. at Univ. Paris-Sorbonne)
-and <a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a> (researcher at Inria Grand Est),
+and Bruno Guillaume (researcher at Inria Grand Est),
 with Nicolas Lefebvre (Engineer at Inria Grand Est).
 The aim of the project is to build language resources (lexicons and annotated corpora) for Natural Language Processing (NLP) applications.
 The language data is produced by the players' activity on Rigor Mortis.
@@ -37,7 +37,7 @@ s</p>
 <p>
 All the data is accessible by all the members of the development team without restriction.
 The team will use the collected language data for research purposes.
-This data does not contain personal information that can be traced back to the author. 
+This data does not contain personal information that can be traced back to the author.
 </p>
 <p>
 Players can delete their account at anytime, with all the information contained in the database. However, the data created by the player and his or her actions in the game will be kept if they are useful for the language resource.
@@ -57,10 +57,10 @@ F-54506 Vandœuvre-lès-Nancy Cedex
 </h2>
 
 <p>
-Some texts, terms or questions asked in Rigor Mortis might be considered as vulgar or offensive by some players. As the aim of Rigor Mortis is to create wide coverage language data, this information will in general be kept in the game. However, we encourage players to bring to our attention any inappropriate content. 
+Some texts, terms or questions asked in Rigor Mortis might be considered as vulgar or offensive by some players. As the aim of Rigor Mortis is to create wide coverage language data, this information will in general be kept in the game. However, we encourage players to bring to our attention any inappropriate content.
 </p>
 <h2>
-(4) Accounts 
+(4) Accounts
 </h2>
 <p>
 Selling accounts or game elements in exchange for money or material belongings is strickly forbidden.
@@ -82,7 +82,7 @@ Rigor Mortis is not free from bugs and inconsistencies. The players are asked to
 </h2>
 <p>
 We need to use cookies for the game to function correctly.
-Such a cookie does not allow us to identify you, however, it registers information regarding your navigation on our site (the pages you have visited, the date and time of the visit, etc.) that we will be able to read when you visit us next time. This information will remain several months on your computer. 
+Such a cookie does not allow us to identify you, however, it registers information regarding your navigation on our site (the pages you have visited, the date and time of the visit, etc.) that we will be able to read when you visit us next time. This information will remain several months on your computer.
 You may oppose the setting of cookies, in which case Rigor Mortis will not function properly.
 To oppose the setting of cookies, you should configure your computer in the following way:
 

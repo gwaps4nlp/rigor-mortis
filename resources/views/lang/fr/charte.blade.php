@@ -2,7 +2,7 @@
 
 <p>
 Rigor Mortis est un jeu gratuit créé dans le cadre d'un projet de recherche
-par <a href="http://www.schplaf.org/kf/" target="_blank">Karën Fort</a>, <a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a>
+par <a href="http://www.schplaf.org/kf/" target="_blank">Karën Fort</a>, Bruno Guillaume
 au sein du <a href="http://www.loria.fr" target="_blank">LORIA</a>, <a href="https://apps.atilf.fr/homepages/mconstant/" target="_blank">Matthieu Constant</a>
 au sein du <a href="http://www.atilf.fr" target="_blank">ATILF</a>,
 avec l'aide de Yann-Alan Pilatte (étudiant à Sorbonne Université).

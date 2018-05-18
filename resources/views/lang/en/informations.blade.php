@@ -19,10 +19,10 @@ Before playing, please read our {!! link_to('charter','charter') !!}.
 <h2>Who is involved?</h2>
 <ul>
 	<li><a href="http://karenfort.org/" target="_blank">Karën Fort</a> -- (STIH team, Paris-Sorbonne / Paris 4): research and design of the game</li>
-	<li><a href="http://www.loria.fr/~guillaum" target="_blank">Bruno Guillaume</a> -- (Sémagramme team, LORIA): research and design of the game</li>
+	<li>Bruno Guillaume -- (Sémagramme team, LORIA): research and design of the game</li>
 	<li>Nicolas Lefebvre: development</li>
-	<li><a href="http://www.aliceguyot.fr/" target="_blank">Alice Guyot</a>: Web design</li>
 	<li>Charles Ancé: drawings</li>
+	<li>Alice Guyot: Web design (no longer involved)</li>
 	<li>Antoine Chemardin: development (no longer involved)</li>
 	<li>Hadrien Chastant: first studies and mockup (no longer involved)</li>
 	<li>Valentin Stern: development of the first prototype  (no longer involved)</li>
@@ -32,7 +32,7 @@ Before playing, please read our {!! link_to('charter','charter') !!}.
 		<div class="row">
 			<div class="col-md-2 col-md-offset-2 text-center" style="background-color:white; padding-top: 20px; padding-bottom: 20px;">
 				<a href="http://www.paris-sorbonne.fr/" target="_blank">
-					{!! Html::image('img/logo_sorbonne.png','Logo Sorbonne') !!}
+					{!! Html::image('img/logo_sorbonne.png','Logo Sorbonne',array ('style' => 'width:100%')) !!}
 				</a>
 			</div>
 			<div class="col-md-2 text-center" style="background-color:white; padding-top: 20px; padding-bottom: 20px;">

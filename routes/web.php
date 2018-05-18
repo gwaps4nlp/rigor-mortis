@@ -64,3 +64,8 @@ Route::group(array('before' => 'admin'), function ()
 });
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::get('charter', function()
+{
+    return view('auth.charte');
+});

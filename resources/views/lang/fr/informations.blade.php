@@ -26,7 +26,7 @@ Avant de jouer, lisez la {!! link_to('charter','charte') !!} de Rigor Mortis.
 		<div class="row">
 			<div class="col-md-2 col-md-offset-2 text-center" style="background-color:white; padding-top: 20px; padding-bottom: 20px;">
 				<a href="http://www.paris-sorbonne.fr/" target="_blank">
-					{!! Html::image('img/logo_sorbonne.png','Logo Sorbonne') !!}
+					{!! Html::image('img/logo_sorbonne.png','Logo Sorbonne',array ('style' => 'width:100%')) !!}
 				</a>
 			</div>
 			<div class="col-md-2 text-center" style="background-color:white; padding-top: 20px; padding-bottom: 20px;">

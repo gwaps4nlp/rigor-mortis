@@ -15,7 +15,7 @@
         <input type="radio" name="type_export" value="only_answers" /> Only the answers<br/>
       </div>
       <div class="form-group">
-        <label for="type_export" class="control-label">Type of export :</label><br/>
+        <label for="type_export" class="control-label">Options :</label><br/>
         <input type="checkbox" name="only_experts" value="1" /> Only the answers of the experts<br/>
         <input type="checkbox" name="add_usernames" value="1" /> Add the usernames in the export<br/>
       </div>

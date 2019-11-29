@@ -10,7 +10,7 @@
 		<input type="submit" value="Filtrer" class="btn btn-success" />
 	</div>
 </div>
-	{!! Form::close() !!}
+	{!! Form::close() !!}	
 
 </form>
 	<table class="table table-striped" id="classement">
@@ -26,7 +26,7 @@
 		<tbody>
 @foreach ($users as $user)
 		<tr>
-			<td>{{ $user->username }}</td>
+			<td><a href="{{ route('user.edit',['user'=>$user->id]) }}" class="text-secondary">{{ $user->username }}</a></td>
 			<td>{{ $user->roles->implode('label', ', ') }}</td>
 			<td>{{ $user->score }}</td>
 			<td>{{ $user->email }}</td>

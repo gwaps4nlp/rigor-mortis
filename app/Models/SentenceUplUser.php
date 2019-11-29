@@ -9,4 +9,9 @@ class SentenceUplUser extends Model
     protected $fillable = ['user_id','sentence_upl_id','source_id','points','seen'];
     
     protected $table = 'sentence_upl_user';
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
 }

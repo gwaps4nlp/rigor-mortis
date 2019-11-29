@@ -50,7 +50,7 @@ Route::group(array('before' => 'auth'), function ()
 	Route::get('user/home', 'UserController@getHome');
 	Route::get('user/players', 'UserController@getPlayers')->name('players');
 	Route::get('user/connected', 'UserController@getConnected');
-	Route::get('user/index-admin', 'UserController@getIndexAdmin')->middleware('admin');
+	Route::get('user/index-admin', 'UserController@getIndexAdmin')->middleware('admin')->name('users.index');
     Route::get('user/{user}', 'UserController@show')->name('show-user');
     Route::post('user/change-email', 'UserController@postChangeEmail');
     Route::post('password/change', 'UserController@postChangePassword');
@@ -61,6 +61,8 @@ Route::group(array('before' => 'admin'), function ()
 	Route::get('admin', 'AdminController@getIndex');
 	Route::get('admin/reporting', 'AdminController@getReporting');
 	Route::get('admin/mwe', 'AdminController@getMwe');
+	Route::get('user/edit/{user}', 'UserController@getEdit')->name('user.edit');
+	Route::post('user/update/{user}', 'UserController@postUpdate')->name('user.update');
 });
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');

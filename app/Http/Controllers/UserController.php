@@ -25,7 +25,7 @@ class UserController extends Controller
     public function __construct(UserRepository $users)
     {
         $this->middleware('auth');
-        $this->middleware('admin',['only'=>'getIndexAdmin']);
+        $this->middleware('admin',['only'=>['getIndexAdmin']]);
         $this->users = $users;
     }
 
@@ -231,6 +231,39 @@ class UserController extends Controller
     {
         $users = $this->users->getConnected();
         return view('front.user.connected',compact('users'));
+    }
+
+
+    /**
+     * Edit a user.
+     *
+     * @return Illuminate\Http\Response
+     */
+    public function getEdit(User $user)
+    {
+        $roles = Role::get();
+        return view('back.user.edit',compact('user','roles'));
+    }
+
+    /**
+     * Update a user.
+     *
+     * @return Illuminate\Http\Response
+     */
+    public function postUpdate(Request $request, User $user)
+    {
+        $this->validate($request, [
+            'email' => 'email|max:255|unique:users,email,'.$user->id,
+            'roles' => 'required'
+
+        ]);
+        $user->update($request->all());
+        $user->roles()->detach();
+        $user->roles()->attach($request->input('roles'));
+        return redirect()->route('users.index')
+
+                        ->with('success','User created successfully');
+        return view('back.user.edit',compact('user','roles'));
     }
 
 }

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Gwaps4nlp\Core\Models\Sentence as Gwaps4nlpSentence;
+use Gwaps4nlp\Core\Models\Source;
 use DB;
 
 class Sentence extends Gwaps4nlpSentence
@@ -33,17 +34,18 @@ class Sentence extends Gwaps4nlpSentence
      *
      * @return Illuminate\Database\Eloquent\Relations\hasMany
      */
-    public function upls_user($user_id=null, $excluded_users=[])
+    public function upls_user($user_id=null, $excluded_users=[], $only_users=[])
     {
         if($user_id)
             return $this->hasMany('App\Models\SentenceUpl')
                     ->where('sentence_upl.source_id',2)
                     ->where('user_id',$user_id)
                     ->join('sentence_upl_user','sentence_upl.id','=','sentence_upl_id');
-        elseif($excluded_users)
+        elseif($excluded_users || $only_users)
             return $this->hasMany('App\Models\SentenceUpl')
                     ->where('sentence_upl.source_id',2)
                     ->whereNotIn('user_id',$excluded_users)
+                    ->whereIn('user_id',$only_users)
                     ->join('sentence_upl_user','sentence_upl.id','=','sentence_upl_id');
         else
             return $this->hasMany('App\Models\SentenceUpl')
@@ -56,9 +58,9 @@ class Sentence extends Gwaps4nlpSentence
      *
      * @return Illuminate\Database\Eloquent\Relations\hasMany
      */
-    public function count_upls_user($excluded_users=[])
+    public function count_upls_user($excluded_users=[], $only_users=[])
     {
-        return $this->upls_user(null, $excluded_users)
+        return $this->upls_user(null, $excluded_users, $only_users)
             ->selectRaw('sentence_id, upl_id, words_positions, sentence_upl.id as sentence_upl_id, count(*) as number')
             ->groupBy(DB::raw('sentence_id, words_positions'));
     }

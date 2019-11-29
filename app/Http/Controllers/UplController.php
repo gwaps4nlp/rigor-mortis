@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\UplStage;
 use App\Models\SentenceUpl;
 use App\Models\Upl;
+use Gwaps4nlp\Core\Models\Role;
 use Gwaps4nlp\Core\Models\Source;
 use App\Models\SentenceUplStage;
 use App\Models\SentenceUplUser;
@@ -133,6 +134,16 @@ class UplController extends Controller
 
         $upl_stage = $upl_stages->getById($request->input('stage_id'));
 
+        $add_usernames = $request->input('add_usernames');
+        $only_experts = $request->input('only_experts');
+        
+        $role_expert = Role::where('slug','=','expert')->first();
+
+        if($only_experts)
+            $experts = $role_expert->users()->get()->pluck('id');
+        else
+            $experts = [];
+
         $type_export = $request->input('type_export');
         if($type_export=='complete')
             $percent_min_players = 0;
@@ -193,7 +204,10 @@ class UplController extends Controller
                 }                
             } else {
                 
-                $upls_users = $sentence->count_upls_user()->orderBy('words_positions','asc')->with('upl')->get();
+                if($sentence->isReference())
+                    $export.= "## Phrase de référence\n";
+
+                $upls_users = $sentence->count_upls_user([], $experts)->orderBy('words_positions','asc')->with('upl')->get();
 
                 $index_upls = 1;
                 foreach($upls_users as $upl){
@@ -215,8 +229,22 @@ class UplController extends Controller
                     } else {
                         $export.= "# no mwe ";
                     }
-                    $export.= "- ".$number_answers." players (".$percent_players."%)";
-                    $export.= "\n";
+                    if(!$only_experts){
+                        $export.= "- ".$number_answers." players (".$percent_players."%)";
+                        $export.= "\n";
+                    }
+                    if($add_usernames){
+                        if($only_experts)
+                            $upls_user = SentenceUplUser::where('sentence_upl_id',$upl->sentence_upl_id)->whereIn('user_id',$experts)->with('user')->get();
+                        else
+                            $upls_user = SentenceUplUser::where('sentence_upl_id',$upl->sentence_upl_id)->with('user')->get();
+                        $usernames = [];
+                        foreach($upls_user as $upl_user){
+                            $usernames[] = $upl_user->user->username;   
+                        }
+                        $export.= "## ".implode(' - ',$usernames);
+                        $export.= "\n";
+                    }
                 }
 
                 foreach($lines as $index=>$line){
@@ -227,6 +255,8 @@ class UplController extends Controller
             $export.= "\n";
             fputs($file, $export);
         }
+// $upl_stage = $upl_stages->getList();
+//         return view('back.upl.export',compact('upl_stage'));
         return response()->download($pathToFile, 'export.csv');
     }
 

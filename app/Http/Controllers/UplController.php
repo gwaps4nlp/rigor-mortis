@@ -231,8 +231,8 @@ class UplController extends Controller
                     }
                     if(!$only_experts){
                         $export.= "- ".$number_answers." players (".$percent_players."%)";
-                        $export.= "\n";
                     }
+                    $export.= "\n";
                     if($add_usernames){
                         if($only_experts)
                             $upls_user = SentenceUplUser::where('sentence_upl_id',$upl->sentence_upl_id)->whereIn('user_id',$experts)->with('user')->get();

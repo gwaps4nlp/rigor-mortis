@@ -160,24 +160,29 @@ class UplController extends Controller
             $export = "";
             $lines = [];
             $tokens = Upl::splitSentence($sentence->content);
+            $whitespace_positions = [];
 
             $distinct_players = $sentence->count_distinct_players();
             // $distinct_players = $sentence->count_distinct_players(null, [796,1158,1180]);
             foreach($tokens as $key=>$token){
-                $lines[$key+1]=[];
-                $lines[$key+1]['token']=$token;
-                $lines[$key+1]['nsp']='_';
-                $lines[$key+1]['upls']=[];
+                $count_whitespaces = count($whitespace_positions);
+                if($token!=""){
+                    $lines[$key+1-$count_whitespaces]=[];
+                    $lines[$key+1-$count_whitespaces]['token']=$token;
+                    $lines[$key+1-$count_whitespaces]['nsp']='_';
+                    $lines[$key+1-$count_whitespaces]['upls']=[];
+                } else {
+                    $whitespace_positions[]=$key+1-$count_whitespaces;
+                }
             }
             
-
+            $export.= "# text : ".$sentence->content."\n";
+            $export.= "# number of players : ".$distinct_players."\n";
             
 
             if($type_export=='only_answers'){
                 $export.= "# sentid\t".$sentence->sentid."\n";
-                $export.= "# players\t".$distinct_players."\n";
-                $export.= "# sentence :\t".$sentence->content."\n";
-                
+
                 // $upls_users = $sentence->count_upls_user([796,1158,1180])->orderBy('number','desc')->with('upl')->get();
                 $upls_users = $sentence->count_upls_user()->orderBy('number','desc')->with('upl')->get();
 
@@ -188,6 +193,14 @@ class UplController extends Controller
 
                 foreach($upls_users as $upl){
                     $words_position = explode('-',$upl->words_positions);
+                    
+                    foreach($words_position as $index => $position){
+                        foreach($whitespace_positions as $whitespace_position){
+                            if($position>$whitespace_position)
+                                $words_position[$index]--;
+                        }
+                    }
+
                     $number_answers = $upl->number;
                     $percent_players = round(100*$number_answers/$distinct_players,2);
                     
@@ -213,6 +226,14 @@ class UplController extends Controller
                 foreach($upls_users as $upl){
                 
                     $words_position = explode('-',$upl->words_positions);
+
+                    foreach($words_position as $index => $position){
+                        foreach($whitespace_positions as $whitespace_position){
+                            if($position>$whitespace_position)
+                                $words_position[$index]--;
+                        }
+                    }
+
                     $number_answers = $upl->number;
                     $percent_players = round(100*$number_answers/$distinct_players,2);
                     
@@ -246,7 +267,7 @@ class UplController extends Controller
                         $export.= "\n";
                     }
                 }
-
+                
                 foreach($lines as $index=>$line){
                     $export.= $index."\t".$line['token']."\t".$line['nsp']."\t".join(';',$line['upls'])."\n";
                 }

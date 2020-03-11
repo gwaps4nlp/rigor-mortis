@@ -4,7 +4,7 @@ You can find here the annotated data described in the paper **Rigor Mortis:Annot
 
 The annotation are described in two files:
  * `RigorMortis_game_annotation.txt` with the 504 sentences of the Annotation part
- * `RigorMortis_bonus_annotation.txt` with the 743 sentences of the Annotation part
+ * `RigorMortis_bonus_annotation.txt` with the 743 sentences of the Bonus Annotation part
 
 The annotations are presented by sentences, separated by a empty line with the format below:
 

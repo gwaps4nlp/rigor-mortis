@@ -1,6 +1,13 @@
-# Annotated data presented at LREC 2020
+# Rigor-Mortis-LREC2020
 
-You can find here the annotated data described in the paper **Rigor Mortis:Annotating MWEs with a Gamified Platform** presented at LREC 2020 in Marseille.
+This page presents the annotated data described in the paper [**Rigor Mortis:Annotating MWEs with a Gamified Platform**](https://github.com/gwaps4nlp/rigor-mortis/blob/master/LREC_2020/LREC2020_RM.pdf) presented at LREC 2020 in Marseille.
+
+## Licence
+![Creative Commons Licence](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
+
+## Description
+
 
 The annotation are described in two files:
  * `RigorMortis_game_annotation.txt` with the 504 sentences of the Annotation part
